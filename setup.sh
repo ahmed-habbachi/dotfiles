@@ -13,6 +13,9 @@ base=(
 useronly=(
   git
   nvim
+  tmux
+  alacritty
+  lf
 )
 
 # run the stow command for the passed in directory ($2) in location $1
