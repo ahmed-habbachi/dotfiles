@@ -1,3 +1,15 @@
 [submodule "tmux/.config/tmux/plugins/tmux-continuum"]
 	path = tmux/.config/tmux/plugins/tmux-continuum
 	url = git@github.com:tmux-plugins/tmux-continuum.git
+[submodule "tmux/.config/tmux/plugins/tmux"]
+	path = tmux/.config/tmux/plugins/tmux
+	url = git@github.com:catppuccin/tmux.git
+[submodule "tmux/.config/tmux/plugins/tmux-resurrect"]
+	path = tmux/.config/tmux/plugins/tmux-resurrect
+	url = git@github.com:tmux-plugins/tmux-resurrect.git
+[submodule "tmux/.config/tmux/plugins/tmux-sessionx"]
+	path = tmux/.config/tmux/plugins/tmux-sessionx
+	url = git@github.com:omerxx/tmux-sessionx.git
+[submodule "tmux/.config/tmux/plugins/tmux-yank"]
+	path = tmux/.config/tmux/plugins/tmux-yank
+	url = git@github.com:tmux-plugins/tmux-yank.git
