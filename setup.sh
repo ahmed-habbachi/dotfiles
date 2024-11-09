@@ -12,6 +12,7 @@ base=(
 # folders that should, or only need to be installed for a local user
 useronly=(
   git
+  nvim
 )
 
 # run the stow command for the passed in directory ($2) in location $1
@@ -21,7 +22,7 @@ stowit() {
   # -v verbose
   # -R recursive
   # -t target
-  stow -v -R -t ${usr} ${app}
+  stow -v --restow -t ${usr} ${app}
 }
 
 echo ""
@@ -34,7 +35,7 @@ done
 
 # install only user space folders
 for app in ${useronly[@]}; do
-  if [[! "$(whoami)" = *"root"*]]; then
+  if [[ ! "$(whoami)" = *"root"* ]]; then
     stowit "${HOME}" $app
   fi
 done
