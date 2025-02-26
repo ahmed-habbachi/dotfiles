@@ -120,6 +120,7 @@ alias vimdiff='nvim -d'
 
 alias lzd='lazydocker'
 alias lzg='lazygit'
+alias docker='podman'
 
 alias config='/usr/bin/git --git-dir=/home/ahmed/.cfg/ --work-tree=/home/ahmed'
 
@@ -147,6 +148,9 @@ export PATH="$PATH:~/.local/bin"
 export DOTNET_ROOT="$HOME/.dotnet"
 export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
 
+#Add docker Compose to works with Podman
+export DOCKER_HOST=unix:///run/user/$(id -u)/podman/podman.sock
+
 PATH=~/.console-ninja/.bin:$PATH
 
 #Add nvm and its completion
@@ -160,3 +164,4 @@ eval "$(zoxide init zsh)"
 
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --tmux bottom --keep-right --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626 --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00 --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf --color=border:#767676,separator:#767676,label:#aeaeae,query:#d9d9d9 --border="rounded" --border-label="Search" --border-label-pos="0" --preview-window="border-rounded" --padding="1,1" --margin="2,10" --prompt="> " --marker=">" --pointer="◆" --separator="─" --scrollbar="│" --layout="reverse-list" --info="right" --preview "bat --color=always --style=numbers --line-range=:500 {}"'
+export PATH=$HOME/.local/bin:$PATH

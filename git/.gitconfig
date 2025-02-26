@@ -3,3 +3,5 @@
 	name = Ahmed HABBACHI
 [init]
 	defaultBranch = main
+[alias]
+	pushfwl = push --force-with-lease
