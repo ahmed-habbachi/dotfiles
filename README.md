@@ -88,7 +88,3 @@ Refer to: [Encrypting secrets](https://www.chezmoi.io/user-guide/encryption/).
 
 * [chezmoi documentation](https://www.chezmoi.io/)
 * [chezmoi GitHub repo](https://github.com/twpayne/chezmoi)
-
-```
-```
-
