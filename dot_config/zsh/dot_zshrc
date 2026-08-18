@@ -115,6 +115,8 @@ source "$ZDOTDIR/plugins.zsh"
 # Prompt/theme
 source "$ZDOTDIR/prompt.zsh"
 
+# Custom Functions
+source "$ZDOTDIR/functions.zsh"
 
 # =========================================================
 # User Custom Configurations
