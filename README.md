@@ -127,11 +127,39 @@ chezmoi update
 chezmoi can store secrets securely using GPG or `age`.
 
 See the official documentation:
-https://www.chezmoi.io/user-guide/encryption/
+<https://www.chezmoi.io/user-guide/encryption/>
 
 ---
+
+## >\_ Zsh config
+
+to configure zsh head to [https://github.com/radleylewis/zsh](radley lewis zsh config) and follow up the zshenv config:  
+Install these packages: zsh neovim eza bat fd fzf zoxide starship ripgrep  
+Add the following to `/etc/zsh/zshenv`:
+
+```sh
+if [[ -z "$XDG_CONFIG_HOME" ]]
+then
+    export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+if [[ -d "$XDG_CONFIG_HOME/zsh" ]]
+then
+    export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+fi
+```
+
+Create required directories\*\*
+
+```sh
+mkdir -p ~/.local/state/zsh   # history
+mkdir -p ~/.cache/zsh         # completion cache
+
+Plugins are installed automatically on first launch via the built-in plugin manager.
 
 ## 📚 References
 
 - https://www.chezmoi.io/
 - https://github.com/twpayne/chezmoi
+- https://github.com/radleylewis/zsh
+```
